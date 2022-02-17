@@ -151,8 +151,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    margin-top: 197px;
+    margin: 197px 0;
 }
 .main_about {
     max-width: 540px;
@@ -218,5 +217,55 @@ body {
 
 
 
-.about_image {
+/* FOOTER */
+
+.footer {
+    /* margin-top: ; */
+    background-color: #000;
+    
 }
+
+.footer_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.copyright_text {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(217, 219, 225, 1);
+
+}
+
+
+.social_link {
+    
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 16px;
+    width: 34px;
+    height: 34px;
+    border: 1px solid transparent;
+    transition: transform 500ms ease-in;
+    
+}
+
+
+.social_link:hover {
+  transform: rotateY(180deg);
+  
+}
+
+.social_link:first-child  {
+   margin-left: 0;
+}
+
+
+
+
+
