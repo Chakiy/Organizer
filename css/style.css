@@ -3,10 +3,18 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+}
+
+a {
+    display: block;
+    line-height: 1;
+    
+}
 
 
 /* VARIABLES */
@@ -19,7 +27,8 @@
 /* CONTAINER */
 
 .container {
-    margin: 0 165px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 /* Body */
@@ -34,22 +43,22 @@ body {
 }
 
 
-/* BORDER BOTTOM */
-
-.border {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
-}
 
 
 /* HEADER */
 
 .header {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
 }
 
 .header_navigation {
+    /* width: 1110px; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
     margin: 16px 0;
 
 
@@ -62,6 +71,7 @@ body {
 }
 
 .logo img {
+    display: block;
     transition: transform 350ms ease-in;
 }
 
@@ -82,8 +92,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 32px;
-    margin-right: 150px;        
+    padding-left: 0px;
+    margin-left: 34px;
 }
 
 .nav li {
@@ -100,6 +110,7 @@ body {
     font-weight: 700;
     text-decoration: none;
     line-height: 1.38;
+    
     color: var(--main_text_col);
     /* background: red; */
     padding: 10px 15px;
@@ -132,17 +143,25 @@ body {
 .store_link{
     display: inline-block;
     background-color: transparent;
-   
-    border-radius: 5px;
+    
+    border-radius: 20px;
    
 }
+
+.store_img {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
 
 .store_link:first-child {
     margin-right: 12px;
 }
 
 .store_link:hover img {
-    box-shadow: 2px 2px 15px 0 rgb(43, 39, 39);
+    box-shadow: 4px 4px 15px 0px rgb(43, 39, 39);
 }
 
 /* MAIN */
@@ -190,6 +209,8 @@ body {
     border: none;
     outline: none;
     z-index: 1;
+    overflow: hidden;
+
 }
 
 
@@ -206,13 +227,13 @@ body {
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 350ms ease-in;
-
 }
 
 
 .btn:hover::before {
     transform: scaleX(100%);
     transform-origin: left;
+    
 }
 
 
